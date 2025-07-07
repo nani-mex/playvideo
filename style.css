@@ -71,3 +71,17 @@ video{
     margin-bottom: 15px;
     justify-content: center;
 }
+.playlist-controls input[type="file"]{
+    display: none;
+}
+
+.playlist-controls button,
+.playlist-controls label{
+    background-color: rgb(211, 164, 255);
+    color: rgb(173, 255, 228);
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font: bold;
+}
