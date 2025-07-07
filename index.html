@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my video player</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="vdo-section">
+
+                <video id="vdoPlayer" controls>
+                    แสดงผล วิดิโอ ตรงนี้
+                </video>
+
+            </div>
+            <div class="playlist-section">
+
+                <div class="playlist-header">Video Playlist</div>
+                <div class="playlist-controls">
+                    <input type="file" id="addVideoInput" accept="video/*" multiple>
+                    <label for="addVideoInput" class="cursor-pointer">Add Video</label>
+                    <button id="sortAsc">Sort A-Z</button>
+                    <button id="sortDesc">Sort A-Z</button>
+                </div>
+
+                <ul id="playlistItems" class="playlist_items">
+                    
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>
