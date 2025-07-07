@@ -10,3 +10,64 @@ body{
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.container{
+    background-color: rgb(255, 154, 205);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+
+    .container{
+        flex-direction: row;
+    }
+    .vdo-section{
+        flex: 7;
+        border-radius: 15px 0 0 15px;
+    }
+    .playlist-section{
+        flex: 3;
+        border-radius: 0 15px 15px 0;
+    }
+
+}
+.vdo-section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(244, 199, 255);
+}
+
+.playlist-section{
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 94, 188);
+}
+video{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+}
+.playlist-header{
+    font-size: x-large;
+    color: rgb(243, 255, 189);
+    text-align: center;
+}
+.playlist-controls{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
